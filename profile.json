@@ -1,0 +1,24 @@
+{
+    "name": "Ondřej Slovák",
+    "skills": [
+    "C#",
+    "C++",
+    "LuaU"
+    ],
+    "interests": [
+    "Herní vývoj",
+    "Herní grafika"
+    ],
+    "projects": [
+    {
+        "title": "BDGS:R",
+        "description": "Střílečka z pohledu první osoby s mnoha režimy hry",
+        "link": "https://www.roblox.com/games/127391603520196"
+    },
+    {
+        "title": "Trial by Fire",
+        "description": "Střílečka z pohledu první osoby s příběhem",
+        "link": "https://www.roblox.com/communities/428614218"
+    }
+    ]
+}
