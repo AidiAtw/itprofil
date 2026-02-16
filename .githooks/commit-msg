@@ -1,0 +1,14 @@
+#!/bin/sh
+# Validates commit messages against Conventional Commits
+commit_msg_file="$1"
+regex='^(feat|fix|style|refactor|docs|chore)(\([^)]*\))?: .+'
+
+if ! grep -qE "$regex" "$commit_msg_file"; then
+  echo "Chybný formát commit zprávy." 1>&2
+  echo "Použij Conventional Commits: type(scope): krátký popis" 1>&2
+  echo "Povolené typy: feat, fix, style, refactor, docs, chore" 1>&2
+  echo "Příklad: feat(profile): přidat editaci profilu" 1>&2
+  exit 1
+fi
+
+exit 0
