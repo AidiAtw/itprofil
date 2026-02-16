@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #34495e;
+    margin: 20px 0 15px 0;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+li:before {
+    content: "→";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+#interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#interests span {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#projects > div {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 15px;
+}
+
+#projects > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.project-content {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-image {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+}
+
+#projects img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+#projects h3 {
+    color: #2c3e50;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+#projects p {
+    padding: 0;
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+#projects a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+}
+
+#projects a:hover {
+    background-color: #2980b9;
+}

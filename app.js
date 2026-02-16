@@ -25,10 +25,19 @@ fetch('profile.json')
         const projectsContainer = document.querySelector('#projects');
         data.projects.forEach(project => {
             const projectDiv = document.createElement('div');
+            let imageHtml = '';
+            if (project.image) {
+                imageHtml = `<img src="${project.image}" alt="${project.title}">`;
+            }
             projectDiv.innerHTML = `
-                <h3>${project.title}</h3>
-                <p>${project.description}</p>
-                <a href="${project.link}" target="_blank">Odkaz na projekt</a>
+                <div class="project-content">
+                    <div class="project-text">
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                        <a href="${project.link}" target="_blank">Odkaz na projekt</a>
+                    </div>
+                    ${imageHtml ? `<div class="project-image">${imageHtml}</div>` : ''}
+                </div>
             `;
             projectsContainer.appendChild(projectDiv);
         });
