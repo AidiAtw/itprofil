@@ -8,7 +8,7 @@ Používám CC, funguje:
 
 Příklad: `feat(profile): přidat editaci profilu`
 
-### Ukázky správných commitů
+### ukázky
 
 - `feat(data): pridane zajmy v profile.json`
 
