@@ -2,50 +2,38 @@
 
 ## Git – Conventional Commits
 
-Používejte formát commit zpráv podle Conventional Commits:
-
+Používám CC, funguje:
 - Formát: `type(scope): krátký popis změny`
 - Povolené typy: `feat`, `fix`, `style`, `refactor`, `docs`, `chore`
 
 Příklad: `feat(profile): přidat editaci profilu`
 
-Repo obsahuje validační hook, který zkontroluje formát commit zprávy.
-Chcete-li ho aktivovat lokálně, spusťte v repozitáři:
-
-```bash
-git config core.hooksPath .githooks
-```
-
-Po aktivaci bude commit zamítnut, pokud nebude splňovat výše uvedený formát.
-
-
-
 ### Ukázky správných commitů
 
-- `feat(data): add interests to profile.json`
+- `feat(data): pridane zajmy v profile.json`
 
-	Přidali jste novou část `interests` do JSON souboru.
+	Nová část `interests` v json
 
-- `feat(ui): render interests section from json`
+- `feat(ui): vykreslení dat z jsonu`
 
-	Vykreslili jste sekci zájmů na stránce pomocí dat z `profile.json`.
+	vykresleni sekce zájmů na stránce z `profile.json`.
 
-- `fix(profile): correct interests rendering on mobile`
+- `fix(profile): oprava zobrazeni obrazku v projektu`
 
-	Oprava zobrazení sekce zájmů na mobilních zařízeních.
+	Oprava zobrazení sekce zájmu
 
-- `style(profile): adjust interests layout and spacing`
+- `style(profile): upraveni barev a stylu`
 
-	Úprava CSS vzhledu sekce zájmů (bez změny funkcionality).
+	oprava CSS vzhledu
 
-- `docs(readme): add commit examples and hook instructions`
+- `docs(readme): update dokumentace`
 
-	Aktualizace dokumentace s příklady správných commit zpráv.
+	Aktualizace dokumentace s příklady commit zpráv
 
-- `chore(deps): update dev dependencies`
+- `chore(deps): aktualizace dependu`
 
-	Údržba závislostí bez změny kódu aplikace.
+	Údržba závislostí bez změny kódu
 
-Tyto příklady odpovídají požadovanému formátu `type(scope): popis`.
+příklady odpovídají požadovanému formátu `type(scope): popis`.
 
 
