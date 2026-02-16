@@ -43,6 +43,6 @@ fetch('profile.json')
         });
     })
     .catch(error => {
-        console.error('Došlo k chybě:', error);
+        console.error('Došlo k chybě:', error); 
         document.body.innerHTML += '<p style="color:red">Nepodařilo se načíst data profilu.</p>';
     });
